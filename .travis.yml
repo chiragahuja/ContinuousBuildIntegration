@@ -4,4 +4,4 @@ services:
   - docker
 
 install:
-  - sh travis/deploy_dockerhub.sh
+  - sh travis/buildAndDeploy.sh
