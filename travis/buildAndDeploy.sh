@@ -1,6 +1,6 @@
 #!/bin/sh
-
-docker build --build-arg COMMITHASH=$TRAVIS_REPO_SLUG -t bar .
+set -x
+docker build --build-arg COMMITHASH=$TRAVIS_COMMIT -t bar .
 # Deploying to heroku
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 heroku plugins:install heroku-container-registry
