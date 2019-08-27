@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
-ARG COMMITHASH=5
+ARG COMMITHASH=10
 
 ENV LASTCOMMITHASH=$COMMITHASH
 
