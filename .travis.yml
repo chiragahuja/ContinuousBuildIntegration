@@ -3,7 +3,5 @@ sudo: required
 services:
   - docker
 
-language: python
-
-after_success:
+install:
   - sh travis/deploy_dockerhub.sh
